@@ -3,11 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
     font-size: 62.5%;
 }
+
 
 body {
     display: flex;
@@ -22,56 +24,147 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    margin: 3rem;
+}
+
+.tamanho-padrao {
+    width: 96%;
+    margin: 3rem 3rem 0rem 3rem;
 }
 
 .cabecalho-navegacao {
     display: flex;
-    justify-content: space-evenly;
-    min-height: 6rem;
-    max-height: 6rem;
+    justify-content: space-between;
+    height: 6rem;
     background-color: #162028;
     color: #fff;
 }
 
 .imagem-topo {
-    width: 144rem;
+    width: 100%;
 }
  
-p.logo-nome {
+p.fonte-viola {
+    font-size: 4rem;
+    margin: 0 20rem;
+}
+
+.fonte-viola {
     font-family: 'Viaoda Libre', sans-serif;
     font-size: 4rem;
     margin: 0;
 }
 
+.cabecalho-navegacao nav {
+    display: flex;
+    align-items: center;
+}
+
 .cabecalho-navegacao > nav > ul {
     display: flex;
     list-style: none;
+    margin: 2rem;
 }
 
 .cabecalho-navegacao a {
-    margin: 0.5rem;
-    padding: 1rem;
+    font-size: 1.8rem;
+    margin: 1rem;
+    padding: 3rem;
     color:  #425564;
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.4rem;
 }
 
 .fundo-branco {
-    max-width: 90vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.equipe-designers {
-    display: flex;
-    gap: 4rem;
+.fundo-branco article {
+    width: 70%;
 }
 
-article > h1 {
-    font-family: 'Viola Libre';
+.fundo-branco h1 {
+    color: #000;
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.fundo-branco p {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.equipe-designers {
+    display: flex;
+    flex: 1;
+    gap: 4rem;
+    margin: 3rem;
+}
+
+.equipe-designers h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 1rem;
+}
+
+.designers {
+    width: 300px;
+}
+
+.designers img {
+    width: 100%;
+}
+
+
+.fundo-azul {
+    background-image: url(images/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.fundo-azul article {
+    padding: 11rem 15rem;
+}
+
+.texto-cinza {
+    color: #555;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+.texto-branco {
+    color: #fff;
+}
+
+.texto-branco h2 {
+    font-size: 7rem;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    margin-bottom: 5rem;
+}
+
+.texto-branco p {
+    font-size: 2.2rem;
+    width: 70%;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #0b171f;
+    color: #6f8597;
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    padding: 3rem 0;
+    width: 96%;
+    margin-bottom: 5rem;
 }
